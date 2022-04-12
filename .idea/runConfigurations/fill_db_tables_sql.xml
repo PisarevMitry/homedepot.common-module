@@ -1,0 +1,8 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="fill_db_tables.sql" type="DatabaseScript" editBeforeRun="true" nameIsGenerated="true">
+    <script-file value="$PROJECT_DIR$/../catalog-service/migration/src/main/resources/db/changelog/start-0.0.2/fill_db_tables.sql" />
+    <script-mode>FILE</script-mode>
+    <data-source id="4a95b1d8-e507-426d-b3fd-69e19c069739" namespace="database/&quot;d67kl6gr8ituvl&quot;/schema/&quot;catalog_data&quot;" />
+    <method v="2" />
+  </configuration>
+</component>

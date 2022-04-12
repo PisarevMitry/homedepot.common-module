@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="catalog-service-dto" />
+        <module name="person-service-dto" />
+        <module name="analyzer-utils" />
+        <module name="monitoring-core-api" />
+        <module name="common-utils" />
+        <module name="catalog-service-core" />
+        <module name="analyzer-core-api" />
+        <module name="catalog-service-utils" />
+        <module name="client-service-dependency-management-bom" />
+        <module name="analyzer-dto" />
+        <module name="dto" />
+        <module name="person-service-migration" />
+        <module name="monitoring-core" />
+        <module name="monitoring-dto" />
+        <module name="common-services" />
+        <module name="monitoring-utils" />
+        <module name="catalog-service-migration" />
+        <module name="gateway-service-core" />
+        <module name="analyzer-core" />
+        <module name="person-service-core-api" />
+        <module name="core" />
+        <module name="catalog-service-core-api" />
+        <module name="common-dto" />
+        <module name="migration" />
+        <module name="gateway-service-dto" />
+        <module name="person-service-utils" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="authorization-core-api" target="11" />
+      <module name="authorization-service" target="11" />
+      <module name="authorization-service-core" target="11" />
+      <module name="authorization-service-dto" target="11" />
+      <module name="authorization-service-migration" target="11" />
+      <module name="authorization-service-utils" target="11" />
+      <module name="common-module" target="11" />
+      <module name="dependency-manager-bom" target="11" />
+      <module name="dependency-manager-bom (1)" target="11" />
+      <module name="dependency-manager-bom (2)" target="11" />
+      <module name="dependency-manager-bom (3)" target="11" />
+      <module name="order-service" target="11" />
+      <module name="order-service (1)" target="11" />
+      <module name="order-service-core" target="11" />
+      <module name="order-service-core (1)" target="11" />
+      <module name="order-service-core-api" target="11" />
+      <module name="order-service-core-api (1)" target="11" />
+      <module name="order-service-dto" target="11" />
+      <module name="order-service-dto (1)" target="11" />
+      <module name="order-service-migration" target="11" />
+      <module name="order-service-utils" target="11" />
+      <module name="order-service-utils (1)" target="11" />
+      <module name="person-service-core" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="common-dto" options="" />
+      <module name="core" options="" />
+      <module name="medicineclinicapp" options="-parameters" />
+    </option>
+  </component>
+</project>
