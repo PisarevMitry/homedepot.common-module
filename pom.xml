@@ -82,7 +82,7 @@
             </plugins>
         </pluginManagement>
         <plugins>
-            <plugin>
+           <!--  <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-checkstyle-plugin</artifactId>
                 <version>${checkstyle.plugin.version}</version>
@@ -131,7 +131,7 @@
                         </goals>
                     </execution>
                 </executions>
-            </plugin>
+            </plugin> -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-site-plugin</artifactId>
@@ -144,7 +144,7 @@
             </plugin>
         </plugins>
     </build>
-    <profiles>
+   <!--  <profiles>
         <profile>
             <id>all-checks-off</id>
             <build>
@@ -174,7 +174,7 @@
                 </plugins>
             </build>
         </profile>
-    </profiles>
+    </profiles> -->
     <distributionManagement>
         <!--         <repository> -->
         <!--             <id></id> -->
