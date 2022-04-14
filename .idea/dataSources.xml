@@ -8,11 +8,11 @@
       <jdbc-url>jdbc:postgresql://localhost:5432/home_depot?currentSchema=catalog_data</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
-    <data-source source="LOCAL" name="d67kl6gr8ituvl@ec2-63-32-248-14.eu-west-1.compute.amazonaws.com" uuid="4a95b1d8-e507-426d-b3fd-69e19c069739">
+    <data-source source="LOCAL" name="d94a4t5v068md8@ec2-52-212-228-71.eu-west-1.compute.amazonaws.com" uuid="8964f80c-d21c-48dc-b6ff-06917d52c061">
       <driver-ref>postgresql</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql://ec2-63-32-248-14.eu-west-1.compute.amazonaws.com:5432/d67kl6gr8ituvl</jdbc-url>
+      <jdbc-url>jdbc:postgresql://ec2-52-212-228-71.eu-west-1.compute.amazonaws.com:5432/d94a4t5v068md8</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
   </component>
