@@ -53,8 +53,8 @@
             </module> -->
         <!-- See http://checkstyle.sourceforge.net/config_blocks.html#RightCurly -->
         <module name="RightCurly"/>
-        <!-- See http://checkstyle.sourceforge.net/config_blocks.html#AvoidNestedBlocks -->
-        <module name="AvoidNestedBlocks"/>
+      <!--   &lt;!&ndash; See http://checkstyle.sourceforge.net/config_blocks.html#AvoidNestedBlocks &ndash;&gt;
+        <module name="AvoidNestedBlocks"/> -->
 
         <!-- Checks for Class Design -->
         <!-- See http://checkstyle.sourceforge.net/config_design.html#VisibilityModifier -->
