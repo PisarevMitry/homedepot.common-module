@@ -1,0 +1,12 @@
+com\mirea\homedepot\commonmodule\dto\type\ProductCategoryDtoType.class
+com\mirea\homedepot\commonmodule\dto\type\ProductPhotoDtoType.class
+com\mirea\homedepot\commonmodule\dto\definition\ProductCategoryDto.class
+com\mirea\homedepot\commonmodule\dto\type\ProductSpecialConditionDtoType.class
+com\mirea\homedepot\commonmodule\dto\type\ProductDtoType.class
+com\mirea\homedepot\commonmodule\dto\definition\ProductPhotoDto.class
+com\mirea\homedepot\commonmodule\dto\Dto.class
+com\mirea\homedepot\commonmodule\dto\definition\ProductSpecialConditionDto.class
+com\mirea\homedepot\commonmodule\dto\definition\ProductFeedbackDto.class
+com\mirea\homedepot\commonmodule\dto\definition\ProductDto.class
+com\mirea\homedepot\commonmodule\dto\DtoType.class
+com\mirea\homedepot\commonmodule\dto\type\ProductFeedbackDtoType.class

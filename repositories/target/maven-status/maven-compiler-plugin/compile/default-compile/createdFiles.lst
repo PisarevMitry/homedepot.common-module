@@ -1,0 +1,5 @@
+com\mirea\homedepot\commonmodule\repositories\Repository.class
+com\mirea\homedepot\commonmodule\repositories\BasicMethodRepository.class
+com\mirea\homedepot\commonmodule\repositories\IterativeRepository.class
+com\mirea\homedepot\commonmodule\repositories\TreeSearchRepository.class
+com\mirea\homedepot\commonmodule\repositories\ParentSearchRepository.class

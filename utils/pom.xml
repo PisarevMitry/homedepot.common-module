@@ -12,7 +12,26 @@
     </parent>
 
     <artifactId>common-utils</artifactId>
-    <packaging>pom</packaging>
+    <packaging>jar</packaging>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.modelmapper</groupId>
+            <artifactId>modelmapper</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.mirea</groupId>
+            <artifactId>common-dto</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.mirea</groupId>
+            <artifactId>common-model</artifactId>
+        </dependency>
+    </dependencies>
     <build>
         <plugins>
             <plugin>

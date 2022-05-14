@@ -13,13 +13,20 @@
         <module>services</module>
         <module>dependency-management-bom</module>
         <module>utils</module>
+        <module>model</module>
+        <module>repositories</module>
     </modules>
 
     <properties>
         <docker.image.prefix>myProject</docker.image.prefix>
+
+        <thymeleaf.version>3.1.0.M1</thymeleaf.version>
+
+        <docker.image.prefix>HomeDepot</docker.image.prefix>
         <java.version>11</java.version>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
+
         <maven.compiler.plugin>3.8.1</maven.compiler.plugin>
 
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -63,7 +70,7 @@
                     <artifactId>spring-boot-maven-plugin</artifactId>
                     <version>${spring.boot.version}</version>
                 </plugin>
-                <plugin>
+              <!--   <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-pmd-plugin</artifactId>
                     <version>${pmd.plugin.version}</version>
@@ -72,7 +79,7 @@
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-checkstyle-plugin</artifactId>
                     <version>${checkstyle.plugin.version}</version>
-                </plugin>
+                </plugin> -->
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-compiler-plugin</artifactId>
@@ -86,14 +93,15 @@
             </plugins>
         </pluginManagement>
 
-        <plugins>
+    <!--     <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-checkstyle-plugin</artifactId>
                 <version>${checkstyle.plugin.version}</version>
                 <configuration>
                     <configLocation>./build-tools/src/main/resources/checkstyle/checkstyle.xml</configLocation>
-                    <suppressionsLocation>./build-tools/src/main/resources/checkstyle/checkstyle_suppress.xml</suppressionsLocation>
+                    <suppressionsLocation>./build-tools/src/main/resources/checkstyle/checkstyle_suppress.xml
+                    </suppressionsLocation>
                     <consoleOutput>true</consoleOutput>
                     <failsOnError>true</failsOnError>
                     <failOnViolation>true</failOnViolation>
@@ -137,10 +145,10 @@
                     </execution>
                 </executions>
             </plugin>
-        </plugins>
+        </plugins> -->
     </build>
 
-    <profiles>
+<!--     <profiles>
         <profile>
             <id>all-checks-off</id>
             <build>
@@ -170,7 +178,7 @@
                 </plugins>
             </build>
         </profile>
-    </profiles>
+    </profiles> -->
 
     <distributionManagement>
         <!--        <repository>-->
