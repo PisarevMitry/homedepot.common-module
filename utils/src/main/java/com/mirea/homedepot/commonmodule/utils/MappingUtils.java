@@ -17,5 +17,4 @@ public class MappingUtils {
                 .setFieldAccessLevel(Configuration.AccessLevel.PRIVATE);
         return mapper;
     }
-
 }

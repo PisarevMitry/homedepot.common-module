@@ -8,31 +8,27 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="catalog-service-dto" />
-        <module name="person-service-dto" />
-        <module name="analyzer-utils" />
-        <module name="monitoring-core-api" />
-        <module name="common-utils" />
-        <module name="catalog-service-core" />
-        <module name="analyzer-core-api" />
-        <module name="common-model" />
-        <module name="repositories" />
-        <module name="utils" />
-        <module name="client-service-dependency-management-bom" />
-        <module name="analyzer-dto" />
-        <module name="dto" />
         <module name="person-service-migration" />
         <module name="monitoring-core" />
+        <module name="person-service-dto" />
         <module name="monitoring-dto" />
         <module name="common-services" />
         <module name="monitoring-utils" />
         <module name="gateway-service-core" />
         <module name="catalog-service-migration" />
+        <module name="analyzer-utils" />
+        <module name="monitoring-core-api" />
+        <module name="common-utils" />
         <module name="analyzer-core" />
         <module name="person-service-core-api" />
-        <module name="core" />
+        <module name="catalog-service-core" />
+        <module name="analyzer-core-api" />
+        <module name="common-model" />
+        <module name="repositories" />
         <module name="common-dto" />
-        <module name="migration" />
+        <module name="utils" />
         <module name="gateway-service-dto" />
+        <module name="analyzer-dto" />
         <module name="person-service-utils" />
       </profile>
     </annotationProcessing>
@@ -45,11 +41,16 @@
       <module name="authorization-service-utils" target="11" />
       <module name="catalog-service-core-api" target="11" />
       <module name="catalog-service-utils" target="11" />
+      <module name="client-service" target="11" />
+      <module name="client-service-dependency-management-bom" target="11" />
       <module name="common-module" target="11" />
+      <module name="core" target="11" />
       <module name="dependency-manager-bom" target="11" />
       <module name="dependency-manager-bom (1)" target="11" />
       <module name="dependency-manager-bom (2)" target="11" />
       <module name="dependency-manager-bom (3)" target="11" />
+      <module name="dto" target="11" />
+      <module name="migration" target="11" />
       <module name="order-service" target="11" />
       <module name="order-service (1)" target="11" />
       <module name="order-service-core" target="11" />
