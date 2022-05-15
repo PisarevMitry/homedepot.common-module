@@ -14,7 +14,6 @@
         <module name="monitoring-dto" />
         <module name="common-services" />
         <module name="monitoring-utils" />
-        <module name="gateway-service-core" />
         <module name="catalog-service-migration" />
         <module name="analyzer-utils" />
         <module name="monitoring-core-api" />
@@ -27,7 +26,6 @@
         <module name="repositories" />
         <module name="common-dto" />
         <module name="utils" />
-        <module name="gateway-service-dto" />
         <module name="analyzer-dto" />
         <module name="person-service-utils" />
       </profile>
@@ -50,6 +48,10 @@
       <module name="dependency-manager-bom (2)" target="11" />
       <module name="dependency-manager-bom (3)" target="11" />
       <module name="dto" target="11" />
+      <module name="gateway-service" target="11" />
+      <module name="gateway-service-core" target="11" />
+      <module name="gateway-service-dependency-management-bom" target="11" />
+      <module name="gateway-service-dto" target="11" />
       <module name="migration" target="11" />
       <module name="order-service" target="11" />
       <module name="order-service (1)" target="11" />
