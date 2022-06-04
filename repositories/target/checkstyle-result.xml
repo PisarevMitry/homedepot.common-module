@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="8.43">
+<file name="C:\Users\dpisarev\IdeaProjects\homedepot.common-module\repositories\src\main\java\com\mirea\homedepot\commonmodule\repositories\BasicMethodRepository.java">
+</file>
+<file name="C:\Users\dpisarev\IdeaProjects\homedepot.common-module\repositories\src\main\java\com\mirea\homedepot\commonmodule\repositories\IterativeRepository.java">
+</file>
+<file name="C:\Users\dpisarev\IdeaProjects\homedepot.common-module\repositories\src\main\java\com\mirea\homedepot\commonmodule\repositories\ParentSearchRepository.java">
+</file>
+<file name="C:\Users\dpisarev\IdeaProjects\homedepot.common-module\repositories\src\main\java\com\mirea\homedepot\commonmodule\repositories\Repository.java">
+</file>
+<file name="C:\Users\dpisarev\IdeaProjects\homedepot.common-module\repositories\src\main\java\com\mirea\homedepot\commonmodule\repositories\TreeSearchRepository.java">
+</file>
+</checkstyle>

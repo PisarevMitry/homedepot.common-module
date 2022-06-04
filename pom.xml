@@ -15,6 +15,7 @@
         <module>utils</module>
         <module>model</module>
         <module>repositories</module>
+        <module>build-tools</module>
     </modules>
 
     <properties>
@@ -62,6 +63,265 @@
         <github.maven-plugin>0.9</github.maven-plugin>
     </properties>
 
+    <profiles>
+        <profile>
+            <id>all-checks-off</id>
+            <activation>
+                <activeByDefault>false</activeByDefault>
+            </activation>
+            <build>
+                <pluginManagement>
+                    <plugins>
+                        <plugin>
+                            <groupId>org.apache.maven.plugins</groupId>
+                            <artifactId>maven-compiler-plugin</artifactId>
+                            <configuration>
+                                <source>${maven.compiler.source}</source>
+                                <target>${maven.compiler.target}</target>
+                                <annotationProcessorPaths>
+                                    <path>
+                                        <groupId>org.projectlombok</groupId>
+                                        <artifactId>lombok</artifactId>
+                                        <version>${lombok.version}</version>
+                                    </path>
+                                </annotationProcessorPaths>
+                            </configuration>
+                        </plugin>
+                        <plugin>
+                            <groupId>org.springframework.boot</groupId>
+                            <artifactId>spring-boot-maven-plugin</artifactId>
+                            <version>${spring.boot.version}</version>
+                            <configuration>
+                                <attach>false</attach>
+                                <executable>true</executable>
+                            </configuration>
+                            <executions>
+                                <execution>
+                                    <goals>
+                                        <goal>repackage</goal>
+                                    </goals>
+                                </execution>
+                            </executions>
+                        </plugin>
+                        <plugin>
+                            <groupId>org.jacoco</groupId>
+                            <artifactId>jacoco-maven-plugin</artifactId>
+                            <version>0.8.5</version>
+                            <configuration>
+                                <excludes>
+                                    <exclude>**/*Config.*</exclude>
+                                    <exclude>**/*Entity.*</exclude>
+                                    <exclude>**/*Dto.*</exclude>
+                                    <exclude>**/*DTO.*</exclude>
+                                    <exclude>**/dto/**/*</exclude>
+                                    <exclude>**/exception/**/*</exclude>
+                                    <exclude>**/*Exception.*</exclude>
+                                    <exclude>**/test/**/*</exclude>
+                                </excludes>
+                            </configuration>
+                            <executions>
+                                <execution>
+                                    <id>prepare-agent</id>
+                                    <phase>initialize</phase>
+                                    <goals>
+                                        <goal>prepare-agent</goal>
+                                    </goals>
+                                </execution>
+                                <execution>
+                                    <id>report</id>
+                                    <goals>
+                                        <goal>report-aggregate</goal>
+                                    </goals>
+                                    <phase>verify</phase>
+                                </execution>
+                            </executions>
+                        </plugin>
+                        <plugin>
+                            <groupId>org.apache.maven.plugins</groupId>
+                            <artifactId>maven-checkstyle-plugin</artifactId>
+                            <version>${checkstyle.plugin.version}</version>
+                        </plugin>
+                        <plugin>
+                            <groupId>org.liquibase</groupId>
+                            <artifactId>liquibase-maven-plugin</artifactId>
+                            <version>3.8.9</version>
+                            <configuration>
+                                <changelogSchemaName>${profile.changelogSchemaName}</changelogSchemaName>
+                                <propertyFile>${profile.propertyFile}</propertyFile>
+                                <changeLogFile>${profile.changeLogFile}</changeLogFile>
+                                <dataDir>${profile.dataDir}</dataDir>
+                                <!-- log  -->
+                                <verbose>${profile.verbose}</verbose>
+                                <logging>${profile.logging}</logging>
+                                <promptOnNonLocalDatabase>false</promptOnNonLocalDatabase>
+                            </configuration>
+                        </plugin>
+                        <plugin>
+                            <groupId>com.github.kongchen</groupId>
+                            <artifactId>swagger-maven-plugin</artifactId>
+                            <version>3.1.8</version>
+                            <dependencies>
+                                <!-- https://mvnrepository.com/artifact/javax.xml.bind/jaxb-api -->
+                                <dependency>
+                                    <groupId>javax.xml.bind</groupId>
+                                    <artifactId>jaxb-api</artifactId>
+                                    <version>2.3.1</version>
+                                </dependency>
+                            </dependencies>
+                        </plugin>
+                    </plugins>
+                </pluginManagement>
+            </build>
+        </profile>
+        <profile>
+            <id>run-with-checks</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <build>
+                <pluginManagement>
+                    <plugins>
+                        <plugin>
+                            <groupId>org.apache.maven.plugins</groupId>
+                            <artifactId>maven-compiler-plugin</artifactId>
+                            <configuration>
+                                <source>${maven.compiler.source}</source>
+                                <target>${maven.compiler.target}</target>
+                                <annotationProcessorPaths>
+                                    <path>
+                                        <groupId>org.projectlombok</groupId>
+                                        <artifactId>lombok</artifactId>
+                                        <version>${lombok.version}</version>
+                                    </path>
+                                </annotationProcessorPaths>
+                            </configuration>
+                        </plugin>
+                        <plugin>
+                            <groupId>org.springframework.boot</groupId>
+                            <artifactId>spring-boot-maven-plugin</artifactId>
+                            <version>${spring.boot.version}</version>
+                            <configuration>
+                                <attach>true</attach>
+                                <executable>true</executable>
+                            </configuration>
+                            <executions>
+                                <execution>
+                                    <goals>
+                                        <goal>repackage</goal>
+                                    </goals>
+                                </execution>
+                            </executions>
+                        </plugin>
+                        <plugin>
+                            <groupId>org.jacoco</groupId>
+                            <artifactId>jacoco-maven-plugin</artifactId>
+                            <version>0.8.5</version>
+                            <configuration>
+                                <excludes>
+                                    <exclude>**/*Config.*</exclude>
+                                    <exclude>**/*Entity.*</exclude>
+                                    <exclude>**/*Dto.*</exclude>
+                                    <exclude>**/*DTO.*</exclude>
+                                    <exclude>**/dto/**/*</exclude>
+                                    <exclude>**/exception/**/*</exclude>
+                                    <exclude>**/*Exception.*</exclude>
+                                    <exclude>**/test/**/*</exclude>
+                                </excludes>
+                            </configuration>
+                            <executions>
+                                <execution>
+                                    <id>prepare-agent</id>
+                                    <phase>initialize</phase>
+                                    <goals>
+                                        <goal>prepare-agent</goal>
+                                    </goals>
+                                </execution>
+                                <execution>
+                                    <id>report</id>
+                                    <goals>
+                                        <goal>report-aggregate</goal>
+                                    </goals>
+                                    <phase>verify</phase>
+                                </execution>
+                            </executions>
+                        </plugin>
+                        <plugin>
+                            <groupId>org.apache.maven.plugins</groupId>
+                            <artifactId>maven-checkstyle-plugin</artifactId>
+                            <version>${checkstyle.plugin.version}</version>
+                        </plugin>
+                        <plugin>
+                            <groupId>org.liquibase</groupId>
+                            <artifactId>liquibase-maven-plugin</artifactId>
+                            <version>3.8.9</version>
+                            <configuration>
+                                <changelogSchemaName>${profile.changelogSchemaName}</changelogSchemaName>
+                                <propertyFile>${profile.propertyFile}</propertyFile>
+                                <changeLogFile>${profile.changeLogFile}</changeLogFile>
+                                <dataDir>${profile.dataDir}</dataDir>
+                                <!-- log  -->
+                                <verbose>${profile.verbose}</verbose>
+                                <logging>${profile.logging}</logging>
+                                <promptOnNonLocalDatabase>false</promptOnNonLocalDatabase>
+                            </configuration>
+                        </plugin>
+                        <plugin>
+                            <groupId>com.github.kongchen</groupId>
+                            <artifactId>swagger-maven-plugin</artifactId>
+                            <version>3.1.8</version>
+                            <dependencies>
+                                <!-- https://mvnrepository.com/artifact/javax.xml.bind/jaxb-api -->
+                                <dependency>
+                                    <groupId>javax.xml.bind</groupId>
+                                    <artifactId>jaxb-api</artifactId>
+                                    <version>2.3.1</version>
+                                </dependency>
+                            </dependencies>
+                        </plugin>
+                    </plugins>
+                </pluginManagement>
+
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-checkstyle-plugin</artifactId>
+                        <version>${checkstyle.plugin.version}</version>
+                        <dependencies>
+                            <dependency>
+                                <groupId>com.mirea</groupId>
+                                <artifactId>common-build-tools</artifactId>
+                                <version>${project.version}</version>
+                            </dependency>
+                            <dependency>
+                                <groupId>com.puppycrawl.tools</groupId>
+                                <artifactId>checkstyle</artifactId>
+                                <version>8.43</version>
+                            </dependency>
+                        </dependencies>
+                        <configuration>
+                            <configLocation>/checkstyle/checkstyle.xml</configLocation>
+                            <suppressionsLocation>/checkstyle/checkstyle_suppress.xml</suppressionsLocation>
+                            <consoleOutput>true</consoleOutput>
+                            <failsOnError>true</failsOnError>
+                            <failOnViolation>true</failOnViolation>
+                            <outputFileFormat>xml</outputFileFormat>
+                            <excludes>**/generated/**/*</excludes>
+                            <includeTestSourceDirectory>true</includeTestSourceDirectory>
+                        </configuration>
+                        <executions>
+                            <execution>
+                                <phase>package</phase>
+                                <goals>
+                                    <goal>check</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
+
     <build>
         <pluginManagement>
             <plugins>
@@ -93,103 +353,6 @@
             </plugins>
         </pluginManagement>
 
-    <!--     <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-checkstyle-plugin</artifactId>
-                <version>${checkstyle.plugin.version}</version>
-                <configuration>
-                    <configLocation>./build-tools/src/main/resources/checkstyle/checkstyle.xml</configLocation>
-                    <suppressionsLocation>./build-tools/src/main/resources/checkstyle/checkstyle_suppress.xml
-                    </suppressionsLocation>
-                    <consoleOutput>true</consoleOutput>
-                    <failsOnError>true</failsOnError>
-                    <failOnViolation>true</failOnViolation>
-                    <outputFileFormat>xml</outputFileFormat>
-                    <includeTestSourceDirectory>false</includeTestSourceDirectory>
-                </configuration>
-                <executions>
-                    <execution>
-                        <phase>package</phase>
-                        <goals>
-                            <goal>check</goal>
-                        </goals>
-                    </execution>
-                </executions>
-                <dependencies>
-                    <dependency>
-                        <groupId>liga.medical</groupId>
-                        <artifactId>build-tools</artifactId>
-                        <version>${project.version}</version>
-                    </dependency>
-                </dependencies>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-pmd-plugin</artifactId>
-                <version>${pmd.plugin.version}</version>
-                <configuration>
-                    <targetJdk>${java.version}</targetJdk>
-                    <verbose>true</verbose>
-                    <linkXRef>false</linkXRef>
-                    <failOnViolation>true</failOnViolation>
-                    <excludeFromFailureFile>${basedir}/../../build-tools/src/main/resources/pmd/exclude-pmd.properties
-                    </excludeFromFailureFile>
-                </configuration>
-                <executions>
-                    <execution>
-                        <phase>package</phase>
-                        <goals>
-                            <goal>check</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
-        </plugins> -->
     </build>
-<!--
-    <profiles>
-        <profile>
-            <id>all-checks-off</id>
-            <build>
-                <plugins>
-                    <plugin>
-                        <groupId>org.apache.maven.plugins</groupId>
-                        <artifactId>maven-checkstyle-plugin</artifactId>
-                        <executions>
-                            <execution>
-                                <id>checkstyle-validate-sources</id>
-                                <phase>none</phase>
-                            </execution>
-                        </executions>
-                    </plugin>
-                    <plugin>
-                        <groupId>org.apache.maven.plugins</groupId>
-                        <artifactId>maven-pmd-plugin</artifactId>
-                        <executions>
-                            <execution>
-                                <phase>none</phase>
-                                <goals>
-                                    <goal>check</goal>
-                                </goals>
-                            </execution>
-                        </executions>
-                    </plugin>
-                </plugins>
-            </build>
-        </profile>
-    </profiles> -->
 
-    <distributionManagement>
-        <!--        <repository>-->
-        <!--            <id></id>-->
-        <!--            <name></name>-->
-        <!--            <url></url>-->
-        <!--        </repository>-->
-        <!--        <snapshotRepository>-->
-        <!--            <id></id>-->
-        <!--            <name></name>-->
-        <!--            <url></url>-->
-        <!--        </snapshotRepository>-->
-    </distributionManagement>
 </project>

@@ -9,7 +9,6 @@
         <option value="$PROJECT_DIR$/../message-analyzer/pom.xml" />
         <option value="$PROJECT_DIR$/../person-service/pom.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/../catalog-service/pom.xml" />
       </list>
     </option>
   </component>

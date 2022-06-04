@@ -4,26 +4,34 @@
     <file url="file://$PROJECT_DIR$/../catalog-service/core-api/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../catalog-service/core-api/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../catalog-service/core-api/target/dependency" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../catalog-service/core/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../catalog-service/core/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../catalog-service/core/target/dependency" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../catalog-service/dependency-management-bom/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../catalog-service/dependency-management-bom/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../catalog-service/dependency-management-bom/target/dependency" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../catalog-service/dto/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../catalog-service/dto/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../catalog-service/dto/target/dependency" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../catalog-service/migration/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../catalog-service/migration/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../catalog-service/migration/target/dependency" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../catalog-service/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../catalog-service/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../catalog-service/target/dependency" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../catalog-service/utils/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../catalog-service/utils/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../catalog-service/utils/target/dependency" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../client-service/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../client-service/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../device/core/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../device/core/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../device/dependency-management-bom/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../device/dependency-management-bom/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../device/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../device/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../gateway-service/dependency-management-bom/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../gateway-service/dependency-management-bom/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../gateway-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../gateway-service/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/build-tools/${project.basedir}/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/build-tools/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/build-tools/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/dependency-management-bom/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/dependency-management-bom/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/dto/src/main/java" charset="UTF-8" />
@@ -41,16 +49,6 @@
     <file url="file://$PROJECT_DIR$/utils/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/utils/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/utils/target/dependency" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../device/core/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../device/core/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../device/dependency-management-bom/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../device/dependency-management-bom/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../device/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../device/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../gateway-service/dependency-management-bom/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../gateway-service/dependency-management-bom/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../gateway-service/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../gateway-service/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../medical-monitoring/core-api/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../medical-monitoring/core-api/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../medical-monitoring/core/src/main/java" charset="UTF-8" />

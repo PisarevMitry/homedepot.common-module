@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="8.43">
+<file name="C:\Users\dpisarev\IdeaProjects\homedepot.common-module\services\src\main\java\com\mirea\homedepot\commonmodule\services\CrudServiceForDefaultDto.java">
+</file>
+<file name="C:\Users\dpisarev\IdeaProjects\homedepot.common-module\services\src\main\java\com\mirea\homedepot\commonmodule\services\CrudServiceForNotDefaultDto.java">
+</file>
+<file name="C:\Users\dpisarev\IdeaProjects\homedepot.common-module\services\src\main\java\com\mirea\homedepot\commonmodule\services\ParentSearchForDefaultDto.java">
+</file>
+<file name="C:\Users\dpisarev\IdeaProjects\homedepot.common-module\services\src\main\java\com\mirea\homedepot\commonmodule\services\ParentSearchForNotDefaultDto.java">
+</file>
+</checkstyle>

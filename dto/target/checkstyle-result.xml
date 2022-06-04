@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="8.43">
+<file name="C:\Users\dpisarev\IdeaProjects\homedepot.common-module\dto\src\main\java\com\mirea\homedepot\commonmodule\dto\definition\ProductCategoryDto.java">
+</file>
+<file name="C:\Users\dpisarev\IdeaProjects\homedepot.common-module\dto\src\main\java\com\mirea\homedepot\commonmodule\dto\definition\ProductDto.java">
+</file>
+<file name="C:\Users\dpisarev\IdeaProjects\homedepot.common-module\dto\src\main\java\com\mirea\homedepot\commonmodule\dto\definition\ProductFeedbackDto.java">
+</file>
+<file name="C:\Users\dpisarev\IdeaProjects\homedepot.common-module\dto\src\main\java\com\mirea\homedepot\commonmodule\dto\definition\ProductPhotoDto.java">
+</file>
+<file name="C:\Users\dpisarev\IdeaProjects\homedepot.common-module\dto\src\main\java\com\mirea\homedepot\commonmodule\dto\definition\ProductSpecialConditionDto.java">
+</file>
+<file name="C:\Users\dpisarev\IdeaProjects\homedepot.common-module\dto\src\main\java\com\mirea\homedepot\commonmodule\dto\Dto.java">
+</file>
+<file name="C:\Users\dpisarev\IdeaProjects\homedepot.common-module\dto\src\main\java\com\mirea\homedepot\commonmodule\dto\DtoType.java">
+</file>
+<file name="C:\Users\dpisarev\IdeaProjects\homedepot.common-module\dto\src\main\java\com\mirea\homedepot\commonmodule\dto\type\ProductCategoryDtoType.java">
+</file>
+<file name="C:\Users\dpisarev\IdeaProjects\homedepot.common-module\dto\src\main\java\com\mirea\homedepot\commonmodule\dto\type\ProductDtoType.java">
+</file>
+<file name="C:\Users\dpisarev\IdeaProjects\homedepot.common-module\dto\src\main\java\com\mirea\homedepot\commonmodule\dto\type\ProductFeedbackDtoType.java">
+</file>
+<file name="C:\Users\dpisarev\IdeaProjects\homedepot.common-module\dto\src\main\java\com\mirea\homedepot\commonmodule\dto\type\ProductPhotoDtoType.java">
+</file>
+<file name="C:\Users\dpisarev\IdeaProjects\homedepot.common-module\dto\src\main\java\com\mirea\homedepot\commonmodule\dto\type\ProductSpecialConditionDtoType.java">
+</file>
+</checkstyle>

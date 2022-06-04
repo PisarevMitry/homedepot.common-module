@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="8.43">
+<file name="C:\Users\dpisarev\IdeaProjects\homedepot.common-module\utils\src\main\java\com\mirea\homedepot\commonmodule\utils\Enricher.java">
+</file>
+<file name="C:\Users\dpisarev\IdeaProjects\homedepot.common-module\utils\src\main\java\com\mirea\homedepot\commonmodule\utils\MappingUtils.java">
+</file>
+<file name="C:\Users\dpisarev\IdeaProjects\homedepot.common-module\utils\src\main\java\com\mirea\homedepot\commonmodule\utils\Selector.java">
+</file>
+<file name="C:\Users\dpisarev\IdeaProjects\homedepot.common-module\utils\src\main\java\com\mirea\homedepot\commonmodule\utils\SelectorDto.java">
+</file>
+<file name="C:\Users\dpisarev\IdeaProjects\homedepot.common-module\utils\src\main\java\com\mirea\homedepot\commonmodule\utils\SelectorEntity.java">
+</file>
+</checkstyle>

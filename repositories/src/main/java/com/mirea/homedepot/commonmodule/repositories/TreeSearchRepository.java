@@ -12,11 +12,12 @@ public interface TreeSearchRepository extends IterativeRepository {
 
     /**
      * Метод создания дерева элементов на основе всех записей.
+     *
      * @param id идентификатор родительской записи
      * @return список объектов класса Entity
      */
     List<Entity> findTreeByParentId(
             @Param("id")
-                    Long id);
+            Long id);
 
 }
