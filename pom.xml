@@ -70,7 +70,7 @@
                     <artifactId>spring-boot-maven-plugin</artifactId>
                     <version>${spring.boot.version}</version>
                 </plugin>
-              <!--   <plugin>
+                <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-pmd-plugin</artifactId>
                     <version>${pmd.plugin.version}</version>
@@ -79,7 +79,7 @@
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-checkstyle-plugin</artifactId>
                     <version>${checkstyle.plugin.version}</version>
-                </plugin> -->
+                </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-compiler-plugin</artifactId>
@@ -147,8 +147,8 @@
             </plugin>
         </plugins> -->
     </build>
-
-<!--     <profiles>
+<!--
+    <profiles>
         <profile>
             <id>all-checks-off</id>
             <build>

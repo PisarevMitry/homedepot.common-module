@@ -1,5 +1,5 @@
-/*
 package com.mirea.homedepot.commonmodule.utils;
+/*
 
 import com.mirea.homedepot.commonmodule.dto.Dto;
 import com.mirea.homedepot.commonmodule.model.Entity;
@@ -56,4 +56,5 @@ public class SelectorEntity {
                     .collect(Collectors.toList());
         }
     }
-}*/
+}
+*/
